@@ -2,47 +2,51 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 
 const link = {
-    width: '100px',
+    width: '100%',
     padding: '12px',
-    margin: '0 6px 6px',
-    background: 'blue',
+    background: 'black',
     textDecoration: 'none',
     color: 'white',
+    
   }
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='navbar'>
          <NavLink
            to='/'
            exact
-           style={link}
+          className='navLink'
            activeStyle={{
-            background: 'black'
+            background: ' orange',
+            color: 'black'
            }}
          >Home</NavLink>
           <NavLink
            to='/NewMexicoHunts'
            exact
-           style={link}
+          className='navLink'
            activeStyle={{
-            background: 'black'
+            background: ' orange',
+            color: 'black'
            }}
          >New Mexico Hunts</NavLink>
           <NavLink
            to='/TexasHunts'
            exact
-           style={link}
+           className='navLink'
            activeStyle={{
-            background: 'Black'
+            background: ' orange',
+            color: 'black'
            }}
          >Texas Hunts</NavLink>
           <NavLink
            to='/Rates'
            exact
-           style={link}
+           className='navLink'
            activeStyle={{
-            background: 'black'
+            background: ' orange',
+            color: 'black'
            }}
          >Rates</NavLink>
         </div>
