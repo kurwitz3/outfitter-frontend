@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
@@ -13,14 +13,15 @@ function App() {
   <Router>
     <div className="App" >
       <header className="App-header">
-      <h1>American Outfitters</h1>
-        <HuntsContainer />
+     
+        
         <Navbar />
+        <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/NewMexicoHunts' component={NewMexicoHunts}/>
-          <Route exact path='/TexasHunts' component={TexasHunts}/>
-          <Route exact path='/Rates' component={Rates} />
-       
+          <Route  path='/NewMexicoHunts' component={HuntsContainer}/>
+          <Route  path='/TexasHunts' component={HuntsContainer}/>
+          <Route  path='/Rates' component={HuntsContainer} />
+        </Switch>
       </header>
     </div>
   </Router>

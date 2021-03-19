@@ -1,10 +1,16 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
-const TexasHunts = () => {
+const TexasHunts = (props) => {
     return (
-        <div>
-
+        <div className='card'>
+            <div>
+           <h2 id='animal'>{props.hunt.animal}</h2>
+            <p className="desc">{props.hunt.description}</p>
+            <Link to='/Rates' className="btn">Rates and Info</Link>
+            </div>
+            <img src={props.hunt.image} className="pic" ></img>
         </div>
     )
 }
