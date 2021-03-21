@@ -1,3 +1,7 @@
+# American Outfitters 
+*Front end  code
+*[Back end here](https://github.com/kurwitz3/outfitters-backend) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

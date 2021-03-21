@@ -12,25 +12,25 @@ import {
 
 
 class HuntsContainer extends Component {
+   
     componentDidMount(){
-        this.props.fetchHunts()
-        console.log(this.props.hunts)
+      this.props.fetchHunts()
     }
 
     newMexicoHunts(){
-        return this.props.hunts.map(hunt => {
+      return this.props.hunts.map(hunt => {
         if(hunt.location === 'New Mexico'){
-        return <NewMexicoHunts hunt={hunt} />
+          return <NewMexicoHunts hunt={hunt} />
         }
-       })
+      })
     }
 
     texasHunts(){
-        return this.props.hunts.map(hunt => {
+      return this.props.hunts.map(hunt => {
         if(hunt.location === 'Texas'){
-        return <TexasHunts hunt={hunt} />
+          return <TexasHunts hunt={hunt} />
         }
-       })
+      })
     }
 
     rates(){
@@ -42,14 +42,14 @@ class HuntsContainer extends Component {
             <div>
                 <Switch>
                     <Route exact path='/NewMexicoHunts'>
-                        {this.newMexicoHunts()}
-                     </Route>
-                     <Route exact path='/TexasHunts'>
-                         {this.texasHunts()}
-                     </Route>
-                     <Route exact path='/Rates'>
-                        {this.rates()}
-                     </Route>
+                       {this.props.loading ? <h3>Loading...</h3> : this.newMexicoHunts()}
+                    </Route>
+                    <Route exact path='/TexasHunts'>
+                         {this.props.loading ? <h3>Loading...</h3> : this.texasHunts()}
+                    </Route>
+                    <Route exact path='/Rates'>
+                        {this.props.loading ? <h3>Loading...</h3> : this.rates()}
+                    </Route>
                 </Switch>
             </div>
         )

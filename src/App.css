@@ -176,3 +176,44 @@ li{
   margin-left: 75%;
   margin-top: -20px;
 }
+
+.review{
+ width: 800px;
+  margin-left: 25%;
+  margin-right: 10%;
+  margin-top: 0%;
+color: cornsilk;
+background-color: rgb(16, 15, 15);
+margin-bottom: -36px;
+padding-top: 0px;
+padding-bottom: 50px;
+}
+
+.deer2{
+  width:150px;
+  margin-right:70% ;
+  padding-bottom: 0%;
+}
+
+.form{
+  font-size: 25px;
+  width: 500px;
+  height: 200px;;
+  background-color: rgb(16, 15, 15);
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+ color: cornsilk;
+ padding-right: 150px;
+ padding-left: 150px;
+ padding-top:15px ;
+ padding-bottom: 250px;
+}
+
+.card4{
+  background-color: rgb(16, 15, 15);
+  height: 300px;
+  width:47%;
+  margin-left: 25%;
+  margin-bottom: 100px;
+}

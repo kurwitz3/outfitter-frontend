@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom'
 const TexasHunts = (props) => {
     return (
         <div className='card'>
-            <div>
-           <h2 id='animal'>{props.hunt.animal}</h2>
+          <div>
+            <h2 id='animal'>{props.hunt.animal}</h2>
             <p className="desc">{props.hunt.description}</p>
             <Link to='/Rates' className="btn">Rates and Info</Link>
-            </div>
-            <img src={props.hunt.image} className="pic" ></img>
+          </div>
+            <img src={props.hunt.image} className="pic" alt='' ></img>
         </div>
     )
 }

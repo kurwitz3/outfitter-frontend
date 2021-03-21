@@ -1,4 +1,4 @@
-const manageHunts = (state = { hunts: [],loading: false},action) => {
+const manageHunts = (state = { hunts: [],reviews: [], loading: false},action) => {
     switch(action.type){
         case 'LOADING_HUNTS':
             return {
@@ -6,6 +6,7 @@ const manageHunts = (state = { hunts: [],loading: false},action) => {
                 hunts: [...state.hunts],
                 loading: true
             }
+        
         case 'GET_HUNTS':
             return {
                 ...state,
@@ -13,6 +14,23 @@ const manageHunts = (state = { hunts: [],loading: false},action) => {
                 loading: false
             }
 
+            case 'LOADING_REVIEWS':
+                return {
+                    ...state,
+                    hunts: [...state.hunts],
+                    loading: true
+                }
+            
+            case 'GET_REVIEWS':
+                return {
+                    ...state,
+                    reviews: action.payload,
+                    loading: false
+                }
+            case 'ADD_REVIEW':
+                return {
+                    ...state, reviews: [...state.reviews,action.payload]
+                }
         default:
             return state
     }
