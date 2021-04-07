@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Reviews = (props) => {
     return (
@@ -8,6 +9,7 @@ const Reviews = (props) => {
             <h2>{props.review.name}</h2>
             <p>{props.review.date}</p>
             <p>{props.review.content}</p>
+           <Button />
           </div>
         </div>
     )
