@@ -2,7 +2,7 @@
 *Front end  code
 *[Back end here](https://github.com/kurwitz3/outfitters-backend)
 
-## Description
+# Description
 
     This app is a React.js app with a Rails api backend. The app is for a hunting guide service. It contains 
     information about the the hunts and services provided by American Outfitters.  
