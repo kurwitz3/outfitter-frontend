@@ -21,7 +21,7 @@ export const fetchHunts = () => {
 export const fetchReviews = () => {
     return dispatch => {
         dispatch({type: 'LOADING_REVIEWS'})
-        fetch('https://shielded-reaches-36570.herokuapp.com')
+        fetch('https://shielded-reaches-36570.herokuapp.com/reviews')
         .then(resp => resp.json())
         .then(json =>{
             dispatch(setReviews(json))
@@ -39,7 +39,7 @@ export const createReview = (review) => {
             },
             body: JSON.stringify(review)
         }
-        fetch('https://shielded-reaches-36570.herokuapp.com',configObj)
+        fetch('https://shielded-reaches-36570.herokuapp.com/reviews',configObj)
         .then(resp => resp.json())
         .then(json => {
             dispatch(addReview(json))
