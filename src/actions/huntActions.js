@@ -9,7 +9,7 @@ export const fetchHunts = () => {
     return (dispatch) => {
         dispatch({type: 'LOADING_HUNTS'})
         
-        fetch('http://localhost:3000/hunts')
+        fetch('https://shielded-reaches-36570.herokuapp.com')
         .then(resp =>  resp.json())
         .then(json => {
             
@@ -21,7 +21,7 @@ export const fetchHunts = () => {
 export const fetchReviews = () => {
     return dispatch => {
         dispatch({type: 'LOADING_REVIEWS'})
-        fetch('http://localhost:3000/reviews')
+        fetch('https://shielded-reaches-36570.herokuapp.com')
         .then(resp => resp.json())
         .then(json =>{
             dispatch(setReviews(json))
@@ -39,7 +39,7 @@ export const createReview = (review) => {
             },
             body: JSON.stringify(review)
         }
-        fetch('http://localhost:3000/reviews',configObj)
+        fetch('https://shielded-reaches-36570.herokuapp.com',configObj)
         .then(resp => resp.json())
         .then(json => {
             dispatch(addReview(json))
