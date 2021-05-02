@@ -36,9 +36,9 @@ class ReviewForm extends Component{
         return(
             <div >
               <form className='form' onSubmit={(e) => this.handleSubmit(e)}>
-                <p>American Outfitters is commited to giving each hunter a one of kind 
-                    hunting experience. We love to here from our hunters about the expeirence they 
-                    had with us. Please feel free to write about your experiece below and we hope to 
+                <p>American Outfitters is committed to giving each hunter a one-of-a-kind 
+                    hunting experience. We love to hear from our hunters about the experience they 
+                    had with us. Please feel free to write about your experience below, and we hope to 
                     see you for a future hunt. 
                 </p>  
                 
