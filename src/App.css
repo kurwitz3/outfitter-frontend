@@ -29,6 +29,7 @@ h1 {
   background: rgb(16, 15, 15);
   position:fixed;
   text-align: left;
+  z-index: 10;
 }
 
 .navLink {
