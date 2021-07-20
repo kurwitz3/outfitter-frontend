@@ -24,7 +24,7 @@
     width:  400px;
     height: 400px;
     background-size: cover;
-    
+    border-radius: 45px;
   }
   
   .desc {
@@ -43,4 +43,5 @@
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
     margin-left: 100px;
+    text-align: center;
   }
