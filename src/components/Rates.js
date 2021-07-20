@@ -1,4 +1,5 @@
 import React from 'react'
+import '../CSS/Rates.css'
 
 
 const Rates = (props) => {
