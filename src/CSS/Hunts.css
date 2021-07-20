@@ -1,6 +1,8 @@
 .animal {
     margin-top: 0%;
-    color:cornsilk
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    color:rgb(247, 247, 246)
   }
 
 .card {
@@ -9,6 +11,7 @@
     font-size: 25px;
     font-weight: 600;
     text-shadow: 3px 3px 3px black;
+    border-radius: 45px;
     display:flex;
     margin-top: 100px;
     width:70%;
