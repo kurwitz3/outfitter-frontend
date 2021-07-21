@@ -35,19 +35,21 @@ class ReviewForm extends Component{
     }
     render(){
         return(
-            <div className='form' >
-              <form  onSubmit={(e) => this.handleSubmit(e)}>
-                <p className="review__form-text">American Outfitters is committed to giving each hunter a one-of-a-kind 
+            <div className='review__form-container'>
+               <p className="review__form-paragraph">American Outfitters is committed to giving each hunter a one-of-a-kind 
                     hunting experience. We love to hear from our hunters about the experience they 
                     had with us. Please feel free to write about your experience below, and we hope to 
                     see you for a future hunt. 
-                </p>  
-                
-                Your Name: <input type='text'  name='name'onChange={(event) => this.handleChange(event)} value={this.state.name}></input><br></br> <br></br> 
-                Date of Hunt: <input type='text' name='date' onChange={(event) => this.handleChange(event)} value={this.state.date}></input><br></br><br></br>
-                Your Review: <textarea  name='content' onChange={(event) => this.handleChange(event)} value={this.state.content}></textarea><br></br>
-                <button className="review-form__button">Submit </button>
-              </form>
+               </p>  
+                  <form className="review__form" onSubmit={(e) => this.handleSubmit(e)}>
+                      <label for='name'>Your Name:</label>
+                      <input type='text' name='name' onChange={(event) => this.handleChange(event)} value={this.state.name}></input>
+                      <label for="date">Date of Hunt:</label>
+                      <input type='text' name='date' onChange={(event) => this.handleChange(event)} value={this.state.date}></input>
+                      <label for='content'>Your Review:</label>
+                      <textarea  name='content' onChange={(event) => this.handleChange(event)} value={this.state.content}></textarea>
+                      <button className="review-form__button">Submit</button>
+                  </form>
             </div>
         )
     }
