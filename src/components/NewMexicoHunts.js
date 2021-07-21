@@ -1,16 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import '../CSS/Hunts.css'
 
 const NewMexicoHunts = (props) => {
    return (
-        <div className='card'>
+        <div className='hunts-card'>
           <div>
-            <h2 className='animal'>{props.hunt.animal}</h2>
-            <p className="desc">{props.hunt.description}</p>
-            <Link to='/Rates' className="btn">Rates and Info</Link>
+            <h2 className='hunts-card__H2'>{props.hunt.animal}</h2>
+            <p className="hunts-card__paragraph">{props.hunt.description}</p>
           </div>
-            <img src={props.hunt.image} className="pic" alt=''></img>
+            <img src={props.hunt.image} className="hunts-card__pic" alt=''></img>
         </div>
     )
 }

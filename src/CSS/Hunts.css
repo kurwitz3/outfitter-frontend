@@ -1,11 +1,11 @@
-.animal {
+.hunts-card__H2 {
     color: rgb(238, 238, 238);
     font-size: 1.4rem;
     text-align: center;
     text-shadow: 8px 8px 8px rgb(0, 0, 0);
   }
   
-  .card {
+  .hunts-card {
     background-color: rgba(16, 15, 15, 0.693);
     box-shadow: 2px 2px 6px 6px black;
     border-radius: 25px;
@@ -16,7 +16,7 @@
     width:90%;
   }
     
-  .pic {
+  .hunts-card__pic {
     float: left;
     width:  150px;
     height: 150px;
@@ -25,7 +25,7 @@
     box-shadow: 1px 1px 1px 3px black;
   }
     
-  .desc {
+  .hunts-card__paragraph {
     color:white;
     font-size: 0.7rem;
     font-weight: 600;
@@ -36,40 +36,40 @@
   
     @media (min-width: 37.4rem) {
   
-      .animal {
+      .hunts-card__H2 {
         font-size: 2rem;
       }
       
-      .pic {
+      .hunts-card__pic {
         width: 250px;
         height: 250px;
       }
   
-      .desc {
+      .hunts-card__paragraph {
         font-size: 0.9rem;
       }
   }
   
   @media (min-width: 65.7rem) {
   
-      .animal {
+      .hunts-card__H2 {
         font-size: 3.5rem;
       }
   
-      .card {
+      .hunts-card {
         box-shadow: 2px 2px 6px 6px black;
         border-radius: 45px;
         width:70%;
       }
   
-      .pic {
+      .hunts-card__pic {
         width:  400px;
         height: 400px;
         border-radius: 45px;
         box-shadow: 2px 2px 2px 6px black;
       }
   
-      .desc {
+      .hunts-card__paragraph {
         font-size: 1.5rem;
         padding-right: 30px;
       }
