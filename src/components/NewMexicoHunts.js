@@ -13,5 +13,4 @@ const NewMexicoHunts = (props) => {
     )
 }
 
-
 export default NewMexicoHunts

@@ -1,7 +1,6 @@
 import React from 'react'
 import '../CSS/Hunts.css'
 
-
 const TexasHunts = (props) => {
     return (
         <div className='hunts-card'>
