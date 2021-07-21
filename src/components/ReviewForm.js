@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { createReview } from '../actions/huntActions'
 import { connect } from 'react-redux'
+import '../CSS/Reviews.css'
 
 
 class ReviewForm extends Component{
@@ -45,7 +46,7 @@ class ReviewForm extends Component{
                 Your Name: <input type='text'  name='name'onChange={(event) => this.handleChange(event)} value={this.state.name}></input><br></br> <br></br> 
                 Date of Hunt: <input type='text' name='date' onChange={(event) => this.handleChange(event)} value={this.state.date}></input><br></br><br></br>
                 Your Review: <textarea  name='content' onChange={(event) => this.handleChange(event)} value={this.state.content}></textarea><br></br>
-                <button>Submit </button>
+                <button className="review-form__button">Submit </button>
               </form>
             </div>
         )
